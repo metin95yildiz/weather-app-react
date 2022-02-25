@@ -1,0 +1,13 @@
+@use "../../index.scss";
+
+.current {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    min-width: 30rem;
+    max-width: 100%;
+    padding: 1rem;
+    border: 2px solid index.$border-color;
+    border-radius: 1rem;
+}
