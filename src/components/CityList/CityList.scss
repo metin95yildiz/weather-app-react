@@ -1,8 +1,12 @@
 @use "../../index.scss";
 
 .city-list {
+    grid-area: city-list;
     background-color: index.$transparent-bg-color;
     overflow: hidden;
+    overflow-y: scroll;
+    min-height: 1rem;
+    max-height: 30rem;
     border: 3px solid index.$border-color;
     border-left: none;
     border-right: none;
