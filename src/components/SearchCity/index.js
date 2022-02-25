@@ -9,17 +9,18 @@ export default function SearchCity() {
     function submit(event) {
         event.preventDefault();
         dispatch(addCity(cityName));
+        setCityName("");
     }
 
     return (
         <div className="add-city-form">
-            <h2>Add City to See Weather Status</h2>
+            <h2>Add City to See Weather Details</h2>
             <form onSubmit={submit}>
                 <div className="city-input">
                     <label htmlFor="cityName">City name: </label>
                     <input type="search" className="search-input"
                     onChange={(event) => setCityName(event.target.value)}
-                    placeholder="Enter a city name..." name="cityName"/>
+                    placeholder="Enter a city name..." value={cityName} name="cityName"/>
                 </div>
                 <input type="submit" className="submit-input" value="Add" disabled={!cityName}/>
             </form>
