@@ -1,0 +1,32 @@
+@use "../../index.scss";
+
+.city {
+    border: 1px solid index.$border-color;
+    border-left: none;
+    border-right: none;
+    font-weight: 500;
+    .city-name {
+        position: relative;
+        button {
+            top: 0;
+            right: 0;
+            position: absolute;
+            border: none;
+            height: 2.5rem;
+            width: 2.5rem;
+            margin-right: 1rem;
+            background-color: rgb(0, 0, 0, 0);
+            background-image: url("../../assets/cancel.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 2.5rem;
+            cursor: pointer;
+        }
+    }
+    .weekly-forecast {
+        display: flex;
+        margin: 1rem;
+        overflow: hidden;
+        overflow-x: scroll;
+    }
+}
