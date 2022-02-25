@@ -26,7 +26,9 @@ export default function City({city}) {
                         return (
                         <DailyCard
                          data={day}
-                         isToday={index === 0 ? true : false}/>
+                         cityName={city.city}
+                         isToday={index === 0 ? true : false}
+                         key={index}/>
                         );
                     })
                 }

@@ -11,7 +11,7 @@ export default function CityList() {
             {
                 Object.values(cities).map((city) => {
                     return (
-                        <City city={city} key={city} />
+                        <City city={city} key={city.city} />
                     )
                 })
             }
