@@ -1,0 +1,22 @@
+@use "../../index.scss";
+
+.weather-card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid index.$border-color;
+    border-radius: 1rem;
+    height: 24rem;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    &.today {
+        min-width: 16rem;
+        height: 25rem;
+    }
+    h4 {
+        padding: 0.5rem;
+        background-color: index.$border-color;
+        border-radius: 1rem;
+        width: max-content;
+    }
+}

@@ -31,7 +31,9 @@ export default function Time() {
     const showMinutes = minutes < 10 ? "0"+minutes : minutes;
     return (
         <div className="time-box">
-            <div className="time">
+            { showHour ?
+            <>
+                <div className="time">
                 {showHour}:{showMinutes}
                 <span className="am-pm">
                     {amPm}
@@ -40,6 +42,8 @@ export default function Time() {
             <div className="date">
                 {days[day]}, {date} {months[month]}
             </div>
+            </>
+        : "Loading..."}
         </div>
     )
 }
