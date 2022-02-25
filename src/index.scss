@@ -13,13 +13,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
   .App {
     text-align: center;
-    background-image: url("https://source.unsplash.com/random/?City");
+    background-image: url("https://source.unsplash.com/random/?nightCity");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
     header {
+      display: inline-block;
       top: 0;
-      position: fixed;
       background-color: $transparent-bg-color;
       height: 5rem;
       width: 100%;
