@@ -20,7 +20,8 @@ export function *addCity() {
         console.log(forecast);
         const data = {
             city: cityResponse.data.name,
-            details: forecast.data
+            details: forecast.data,
+            createdAt: new Date()
         }
         yield put({ type: COMPLETE_ADDING_CITY_REQUEST, data});
     } catch (error) {
