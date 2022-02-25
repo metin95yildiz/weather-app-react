@@ -1,6 +1,7 @@
 @use "../../index.scss";
 
 .add-city-form {
+    grid-area: search-city;
     display: grid;
     justify-self: center;
     width: 32rem;

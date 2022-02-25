@@ -9,14 +9,31 @@
     margin: 1rem;
     justify-content: center;
     align-items: center;
+    font-size: 1.1rem;
+    min-width: 15rem;
     &.today {
-        min-width: 16rem;
+        border-width: 4px;
+        min-width: 17rem;
         height: 25rem;
     }
     h4 {
         padding: 0.5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         background-color: index.$border-color;
         border-radius: 1rem;
         width: max-content;
+    }
+    .image-frame {
+        border-radius: 1rem;
+        background-color: index.$transparent-bg-color;
+    }
+    .details {
+        p {
+            span {
+                font-weight: 700;
+                font-size: 1.3rem;
+            }
+        }
     }
 }

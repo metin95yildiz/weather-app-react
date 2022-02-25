@@ -1,5 +1,9 @@
 .content {
     display: grid;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    grid-template-areas: "time-box"
+                        "search-city"
+                        "city-list";
+    grid-template-rows: 10rem 1fr 2fr;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
