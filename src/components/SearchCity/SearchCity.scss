@@ -1,0 +1,36 @@
+@use "../../index.scss";
+
+.add-city-form {
+    display: grid;
+    justify-self: center;
+    width: 32rem;
+    height: 10rem;
+    border-radius: 1rem;
+    background-color: index.$transcent-bg-color;
+    form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        .city-input {
+            font-size: 1.3rem;
+            input {
+                padding-left: 1rem;
+                border-radius: 1rem 0 0 1rem;
+                font-size: 1.3rem;
+                height: 2rem;
+            }
+        }
+        .submit-input {
+            width: 5rem;
+            height: 2rem;
+            font-size: 1.3rem;
+            border-radius: 0 1rem 1rem 0;
+            background-color: index.$submit-color;
+            &:disabled {
+                cursor: not-allowed;
+            }
+        }
+    }
+}
