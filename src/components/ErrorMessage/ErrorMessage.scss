@@ -1,0 +1,27 @@
+@use "../../index.scss";
+
+
+.error-message {
+    display: none;
+    grid-area: error-message;
+    height: 3rem;
+    width: 60%;
+    background-color: index.$transparent-bg-color;
+    border-radius: 1rem;
+    align-content: center;
+    justify-self: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s 1s;
+    &.shown {
+        opacity: 1;
+        display: grid;
+    }
+    p {
+        width: 100%;
+        border-radius: 1rem;
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        background-color: index.$text-color;
+    }
+}
