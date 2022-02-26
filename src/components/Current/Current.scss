@@ -2,12 +2,36 @@
 
 .current {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     margin-left: 1rem;
     margin-right: 1rem;
-    min-width: 30rem;
+    min-width: 23rem;
     max-width: 100%;
     padding: 1rem;
     border: 2px solid index.$border-color;
     border-radius: 1rem;
+    .current-item {
+        background-color: index.$border-color;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        width: 92%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+@media(min-width: 38rem) {
+    .current {
+        min-width: 35rem;
+        flex-direction: row;
+        .current-item {
+            background-color: index.$border-color;
+            border-radius: 1rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            margin-right: 1rem;
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
 }

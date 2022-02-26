@@ -19,8 +19,9 @@ export default function DailyCard({ data, isToday, cityName }) {
                 />
             </div>
             <div className="details">
-                <p>Night - <span>{data.temp.night}&#176;C</span></p>
-                <p>Day - <span>{data.temp.day}&#176;C</span></p>
+                <p><span>{data.weather[0].main}</span></p>
+                <p>Night: <span>{data.temp.night}&#176;C</span></p>
+                <p>Day: <span>{data.temp.day}&#176;C</span></p>
             </div>
         </div>
     )

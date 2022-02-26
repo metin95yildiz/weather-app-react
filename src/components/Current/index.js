@@ -7,7 +7,10 @@ export default function Current({ current }) {
     function formatTime(date) {
         const hours = date.getHours();
         const minutes = date.getMinutes();
-        return hours + ":" + minutes.substr(-2);
+        const hourFormat = hours >= 13 ? hours%12 : hours;
+        const amPm  = hours >= 12 ? "PM" : "AM";
+        return (hourFormat >= 10 ? hourFormat : "0"+hourFormat) + ":"
+        + (minutes >= 10 ? minutes : "0"+minutes) + " " + amPm;
     }
     return (
         <div className="current">
@@ -21,10 +24,10 @@ export default function Current({ current }) {
                 <p>Wind Speed: {current.wind_speed}</p>
             </div>
             <div className="current-item">
-                <p>Sunrise: {}</p>
+                <p>Sunrise: {formatTime(sunrise)}</p>
             </div>
             <div className="current-item">
-                <p>Sunset: {}</p>
+                <p>Sunset: {formatTime(sunset)}</p>
             </div>
         </div>
     )
