@@ -2,8 +2,9 @@
     display: grid;
     grid-template-areas: "time-box"
                         "search-city"
+                        "error-message"
                         "city-list";
-    grid-template-rows: 10rem 1fr 2fr;
+    grid-template-rows: 9rem 14rem 3rem 1fr;
     padding-top: 3rem;
     padding-bottom: 3rem;
   }
