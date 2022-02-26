@@ -18,7 +18,8 @@ export default function City({city}) {
                 <button className="remove-button" title="Remove city" onClick={remove}></button>
             </div>
             <div className="current-weather">
-                <Current current={city.details.current}/>
+                <Current current={city.details.current}
+                timezone={city.details.timezone}/>
             </div>
             <div className="weekly-forecast">
                 {

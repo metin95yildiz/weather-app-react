@@ -1,16 +1,16 @@
 import React from "react";
 import "./Current.scss";
+import { DateTime } from "luxon";
 
-export default function Current({ current }) {
-    const sunrise = new Date(current.sunrise*1000);
-    const sunset = new Date(current.sunset*1000);
+export default function Current({ current, timezone }) {
+    const sunrise = current.sunrise;
+    const sunset = current.sunset;
     function formatTime(date) {
-        const hours = date.getHours();
-        const minutes = date.getMinutes();
-        const hourFormat = hours >= 13 ? hours%12 : hours;
-        const amPm  = hours >= 12 ? "PM" : "AM";
-        return (hourFormat >= 10 ? hourFormat : "0"+hourFormat) + ":"
-        + (minutes >= 10 ? minutes : "0"+minutes) + " " + amPm;
+        const localDate = DateTime.fromSeconds(date).setZone(timezone);
+        const hours = localDate.toFormat("hh");
+        const minutes = localDate.toFormat("mm");
+        const amPm  = localDate.toFormat("a");
+        return `${hours}:${minutes} ${amPm}`;
     }
     return (
         <div className="current">
