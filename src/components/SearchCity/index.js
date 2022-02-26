@@ -4,7 +4,7 @@ import { addCity } from "../../store/actions";
 import "./SearchCity.scss";
 
 export default function SearchCity() {
-    const [cityName, setCityName] = useState();
+    const [cityName, setCityName] = useState("");
     const dispatch = useDispatch();
     function submit(event) {
         event.preventDefault();
