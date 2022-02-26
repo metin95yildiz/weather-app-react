@@ -6,10 +6,12 @@ import "./CityList.scss";
 
 export default function CityList() {
     const cities = useSelector(citiesDataMemo);
+    const sortedCities = Object.values(cities).sort((a, b) => {
+    return new Date (b.createdAt) - new Date(a.createdAt) })
     return (
         <div className="city-list">
             {
-                Object.values(cities).map((city) => {
+                sortedCities.map((city) => {
                     return (
                         <City city={city} key={city.city} />
                     )
