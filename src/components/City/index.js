@@ -15,7 +15,7 @@ export default function City({city}) {
         <div className="city">
             <div className="city-name">
                 <h2>{city.city}</h2>
-                <button className="remove-button" onClick={remove}></button>
+                <button className="remove-button" title="Remove city" onClick={remove}></button>
             </div>
             <div className="current-weather">
                 <Current current={city.details.current}/>
