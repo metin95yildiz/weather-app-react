@@ -17,22 +17,12 @@ export default function SearchCity() {
             <h2>Add City to See Weather Details</h2>
             <form onSubmit={submit}>
                 <div className="city-input">
-                    <label htmlFor="cityName">City name: </label>
                     <input type="search" className="search-input"
                     onChange={(event) => setCityName(event.target.value)}
-                    placeholder="Enter a city name..." value={cityName} name="cityName"/>
+                    placeholder="Enter a city name..." value={cityName}/>
                 </div>
                 <input type="submit" className="submit-input" value="Add" disabled={!cityName}/>
             </form>
         </div>
     )
 }
-
-/*
-    <div>
-        <label htmlFor="countryCode">Country code: </label>
-        <input type="search" className="search-input"
-        onChange={(event) => setCityName(event.target.value)}
-        placeholder="Enter city's country code" name="countryCode"/>
-    </div>
-*/
