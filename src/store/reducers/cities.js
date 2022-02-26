@@ -11,9 +11,11 @@ export default function cities(state = "", action)  {
             ...state,
             [action.data.city]: action.data
         };
-        /*case REMOVE_CITY: return state.filter(function(value) {
-            value.city !== action.cityName
-        });*/
+        case REMOVE_CITY:
+            delete state[action.cityName]
+        return {
+            ...state
+        };
         default: return state;
     }
 
