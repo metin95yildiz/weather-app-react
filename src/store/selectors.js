@@ -6,3 +6,10 @@ export const citiesDataMemo = createSelector(
         return cities
     }
 )
+
+export const errorDataMemo = createSelector(
+    state => state.error,
+    error => {
+        return error
+    }
+)
