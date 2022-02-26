@@ -27,9 +27,10 @@
         .submit-input {
             width: 5rem;
             height: 2rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
             border-radius: 0 1rem 1rem 0;
             background-color: index.$submit-color;
+            cursor: pointer;
             &:disabled {
                 cursor: not-allowed;
             }
@@ -47,6 +48,9 @@
                 input {
                     font-size: 1.3rem;
                 }
+            }
+            .submit-input {
+                font-size: 1.3rem;
             }
         }
     }

@@ -24,4 +24,9 @@
     border-radius: 1rem;
     align-content: center;
     @include index.animate(colorChange, 1s, linear, infinite, alternate);
+    .time{
+        span {
+            margin-left: 0.5rem;
+        }
+    }
 }

@@ -34,14 +34,14 @@ export default function Time() {
             { showHour ?
             <>
                 <div className="time">
-                {showHour}:{showMinutes}
-                <span className="am-pm">
-                    {amPm}
-                </span>
-            </div>
-            <div className="date">
-                {days[day]}, {date} {months[month]}
-            </div>
+                    {showHour}:{showMinutes}
+                    <span className="am-pm">
+                        {amPm}
+                    </span>
+                </div>
+                <div className="date">
+                    {days[day]}, {date} {months[month]}
+                </div>
             </>
         : "Loading..."}
         </div>
