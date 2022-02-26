@@ -7,7 +7,21 @@
     overflow-y: scroll;
     min-height: 1rem;
     max-height: 30rem;
+    width: 96%;
     border: 3px solid index.$border-color;
-    border-left: none;
     border-right: none;
+    justify-self: center;
+    &::-webkit-scrollbar {
+        width: 12px;
+    }
+    &::-webkit-scrollbar-track {
+        background: index.$transparent-bg-color;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: index.$border-color;
+        border-radius: 1rem;
+        &:hover {
+            background: index.$scroll-hover-color;
+        }
+    }
 }
