@@ -17,7 +17,6 @@ export function *addCity() {
         const latitude = cityResponse.data.coord["lat"];
         const longitude = cityResponse.data.coord["lon"];
         const forecast = yield call(axios.get, `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=hourly,minutely&units=metric&appid=${API_KEY}`);
-        console.log(forecast);
         const data = {
             city: cityResponse.data.name,
             details: forecast.data,
