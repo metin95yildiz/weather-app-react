@@ -8,7 +8,7 @@ function App() {
       </header>
       <Content />
       <footer>
-        <p>This is Weather App</p>
+        <h2>Weather App</h2>
       </footer>
     </div>
   );
