@@ -4,13 +4,14 @@ import {
     COMPLETE_GETTING_DATA_REQUEST,
     FAIL_GETTING_DATA_REQUEST,
     START_GETTING_DATA_REQUEST,
-    UPDATED_CITY_DATA
+    UPDATED_CITY_DATA,
+    COMPLETE_PERSIST
 } from "../actions/actionTypes";
 import axios from "axios";
 import { citiesDataMemo } from "../selectors";
 
 export function *cities() {
-    yield take("persist/REHYDRATE");
+    yield take(COMPLETE_PERSIST);
     yield put({ type: GET_CITY_WEATHER_DATA });
     yield put({ type: START_GETTING_DATA_REQUEST });
     const cities = yield select(citiesDataMemo);
