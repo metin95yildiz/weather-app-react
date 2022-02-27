@@ -1,6 +1,20 @@
-# Getting Started with Create React App
+# Weather App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is Weather App. It is searching and city for weather details. [OpenWeatherMap Weather API](https://openweathermap.org/) was used for fetching city's latitude, longitude and weather details.
+
+Firstly, the city is searched. The weather information are retrieved with he latitude and longitude of the existing city.
+
+## Used Dependencies
+
+* React
+* Redux
+* Redux-saga
+* Redux-persist
+* Reselect
+* Axios
+* Classnames
+* Sass
+* Luxen
 
 ## Available Scripts
 
