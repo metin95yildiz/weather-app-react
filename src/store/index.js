@@ -26,7 +26,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const weatherStore = () => {
     const store = createStore(persistedReducer, composeEnhancers(applyMiddleware(sagaMiddleware)));
     sagaMiddleware.run(addCity);
-    //sagaMiddleware.run(cities);
+    sagaMiddleware.run(cities);
     return store;
 }
 
