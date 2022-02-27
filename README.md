@@ -2,7 +2,7 @@
 
 This is Weather App. It is searching and city for weather details. [OpenWeatherMap Weather API](https://openweathermap.org/) was used for fetching city's latitude, longitude and weather details.
 
-Firstly, the city is searched. The weather information are retrieved with he latitude and longitude of the existing city.
+Firstly, the city is searched. The weather information are retrieved with latitude and longitude of the existing city.
 
 ## Used Dependencies
 
