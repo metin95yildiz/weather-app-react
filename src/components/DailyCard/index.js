@@ -13,7 +13,7 @@ export default function DailyCard({ data, isToday, cityName }) {
             </h4>
             <div className="image-frame">
                 <img
-                src={`http://openweathermap.org/img/wn//${data.weather[0].icon}@4x.png`}
+                src={`https://openweathermap.org/img/wn//${data.weather[0].icon}@4x.png`}
                 alt="weather-icon"
                 className="weather-icon"
                 />
