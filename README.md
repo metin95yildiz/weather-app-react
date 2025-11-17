@@ -18,7 +18,7 @@ Firstly, the city is searched. The weather information are retrieved with the la
 
 ## Demo
 
-You can reach demo from here: [https://weather-app-react-weld.vercel.app/](https://weather-app-react-weld.vercel.app/)
+You can reach demo from here: (No demo for now)
 
 ## Available Scripts
 
